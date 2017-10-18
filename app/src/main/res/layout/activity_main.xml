@@ -1,31 +1,23 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.sample.foo.sqliteexample.MainActivity">
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center_horizontal"
+    tools:context="com.demo.sqlitedemo.MainActivity">
 
     <ListView
         android:id="@+id/listView1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_above="@+id/addNew">
-    </ListView>
-
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
     <Button
-        android:id="@+id/addNew"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="@dimen/activity_vertical_margin"
-        android:padding="@dimen/activity_vertical_margin"
-        android:textSize="@dimen/text_size"
-        android:text="@string/Add_New"/>
+        android:id="@+id/btn_add"
+        android:text="Add User"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-</RelativeLayout>
+</LinearLayout>
